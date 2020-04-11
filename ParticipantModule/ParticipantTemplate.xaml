@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TCWA.Templates.ParticipantModule.ParticipantTemplate">
+    <ContentView.Content>
+        <StackLayout>
+            <Grid>
+                <BoxView Grid.RowSpan="3" BackgroundColor="LightGreen"/>
+                <StackLayout Grid.Row="0" Orientation="Horizontal">
+                    <Label                      
+                       FontSize="20"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       x:Name="LabelFirstName"/>
+                    <Label
+                       FontSize="20"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       x:Name="LabelLastName"/>
+                </StackLayout>
+                <Label Grid.Row="1"
+                       FontSize="20"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="StartAndExpand"
+                       x:Name="LabelPhoneNumber"/>
+                <StackLayout Grid.Row="2" Orientation="Horizontal">
+                    <Label Text="Select: "
+                           FontSize="20"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <CheckBox
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        CheckedChanged="OnCheckedChanged_MainCheckBox"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
